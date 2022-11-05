@@ -1,0 +1,8 @@
+.my-section {
+  color: rgba(0 0 0 / 0.5);
+  /* background-color: #090;
+  background-image: url("./bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat; */
+  background: #090 url("./bg.jpg") no-repeat top left;
+}
