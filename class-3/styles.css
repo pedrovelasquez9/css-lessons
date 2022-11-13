@@ -1,0 +1,22 @@
+body {
+  background-color: #292d3e;
+  color: #fff;
+}
+
+.bordered {
+  /* border-style: solid;
+  border-width: 1px;
+  border-color: #900; */
+  border: 1px solid #900;
+  border-bottom: dotted #fff;
+  /* border-bottom-style: dotted;
+  border-bottom-color: #fff; */
+  border-radius: 5px 10px 5px 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.sized {
+  width: 400px;
+  height: 80px;
+}
