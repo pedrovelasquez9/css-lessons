@@ -1,0 +1,26 @@
+body {
+  background-color: #292d3e;
+}
+
+.container {
+  width: fit-content;
+  background-color: #004aad44;
+  margin: 10px;
+  padding: 10px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+
+.paragraph {
+  background-color: #38b6ff44;
+  border-left: 5px solid #38b6ff;
+  padding: 5px;
+}
