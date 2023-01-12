@@ -1,0 +1,17 @@
+/* @font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("./assets/fonts/Roboto-Regular.ttf");
+} */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap");
+
+p {
+  /* style, variant, weight, size/line-height, family */
+  font: normal normal bold 28px/40px "Roboto";
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  /* line-height: 10px; */
+  text-indent: 20px;
+  direction: ltr;
+  text-align: center;
+  text-decoration: underline;
+}
