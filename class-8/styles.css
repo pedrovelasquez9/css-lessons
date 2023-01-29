@@ -1,0 +1,85 @@
+a[href="https://programacion-es.dev"]
+{
+  color: red;
+}
+
+/*busca palabras en lista de palabras separadas por espacio  */
+[data-name~="prueba"] {
+  background-color: blue;
+}
+
+/*busca palabras en lista de palabras separadas por guión  */
+[data-user|="Pedro"] {
+  color: red;
+}
+
+/*busca valores que comiencen con la cadena de texto  */
+[href^="http://"]
+{
+  color: green;
+}
+
+/*busca valores que terminen con la cadena de texto  */
+[href$=".dev"] {
+  font-weight: bold;
+}
+
+/*busca coincidencias en cualquier sitio de la cadena de texto del valor del atributo*/
+[href*="-es"] {
+  font-style: italic;
+}
+
+/* aplica el estilo a elemento p dentro de #container a cualquier nivel */
+#container p {
+  color: red;
+}
+
+/* aplica el estilo a elementos section hijos directos de #container a primer nivel */
+#container > section {
+  font-weight: bold;
+}
+
+/* aplica el estilo a elementos div contiguos a #container en el mismo nivel */
+#container + div {
+  font-style: italic;
+}
+
+/* aplica el estilo a elementos div que sigan a #container en el mismo nivel */
+#container ~ div {
+  font-style: italic;
+}
+
+/* aplica el estilo a todos los elementos section de la página */
+section * {
+  font-size: 10px;
+}
+
+/* pseudoclases */
+.hovered:hover {
+  color: purple;
+}
+
+p:lang(en) {
+  color: green;
+}
+
+input:read-only {
+  background-color: blue;
+}
+
+input:required {
+  border: 1px solid green;
+}
+
+/* pseudoelementos */
+.pseudoelement::after {
+  content: "hola mundo";
+}
+
+.pseudoelement::first-letter {
+  color: red;
+}
+
+.pseudoelement::first-line {
+  font-weight: bold;
+}
