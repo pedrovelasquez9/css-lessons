@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: radial-gradient(#069bff, #0b4fbc);
+  color: #fff;
+  height: 100vh;
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 2px;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.active-nav-item {
+  background-color: #fff;
+  color: #000;
+  padding: 15px;
+  width: 100px;
+  text-align: center;
+  transform: skew(-10deg, 0);
+}
+
+.store-main-section h1 {
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 1px 5px #0b4fbc;
+}
+
+.purple-skin {
+  background: radial-gradient(#341757, #201233);
+}
+
+.yellow-skin {
+  background: linear-gradient(#f1d78d, #cb5633);
+}
+
+.pink-skin {
+  background: radial-gradient(#ff9fff, #6e2c8d);
+}
+
+.store-grid-container {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+  grid-template-areas:
+    "skin1 skin2 skin4 skin5"
+    "skin1 skin3 skin4 skin6";
+  justify-items: stretch;
+  align-items: stretch;
+  height: 500px;
+  gap: 10px 10px;
+}
+
+.grid-item {
+  display: grid;
+  justify-items: center;
+  align-items: end;
+}
+
+.grid-item-1 {
+  grid-area: skin1;
+}
+
+.grid-item-2 {
+  grid-area: skin2;
+}
+
+.grid-item-3 {
+  grid-area: skin3;
+}
+
+.grid-item-4 {
+  grid-area: skin4;
+}
+
+.grid-item-5 {
+  grid-area: skin5;
+}
+
+.grid-item-6 {
+  grid-area: skin6;
+}
+
+.skin-image {
+  max-width: 80%;
+  max-height: 100%;
+  filter: drop-shadow(5px 0 10px #000);
+}
+
+@media (max-width: 600px) {
+  .store-grid-container {
+    display: grid;
+    grid-template: repeat(6, 1fr) / 1fr;
+    grid-template-areas:
+      "skin1"
+      "skin2"
+      "skin3"
+      "skin4"
+      "skin5"
+      "skin6";
+    justify-items: stretch;
+    align-items: stretch;
+    height: auto;
+    gap: 10px 10px;
+  }
+}
